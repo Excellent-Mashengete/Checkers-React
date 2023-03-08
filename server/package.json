@@ -1,0 +1,17 @@
+{
+  "name": "checkers-game",
+  "version": "1.0.0",
+  "description": "checkers game server that uses soceket.io to identify each user ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Excellent, Fhatuwani, Nomawethu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "socket.io": "^4.6.1"
+  }
+}
