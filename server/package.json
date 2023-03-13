@@ -4,6 +4,7 @@
   "description": "checkers game server that uses soceket.io to identify each user ",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Excellent, Fhatuwani, Nomawethu",
@@ -12,6 +13,6 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "nodemon": "^2.0.21",
-    "socket.io": "^4.6.1"
+    "socket.io": "2.3.0"
   }
 }

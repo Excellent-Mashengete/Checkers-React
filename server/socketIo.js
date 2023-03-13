@@ -1,7 +1,7 @@
 const socketio = require('socket.io');
-const { addUser, createRoom, joinRoom, leaveRoom, getUser, removeUser, getUsersInRoom, logUsers } = require('./App/Controllers/Controllers');
+const { addUser, createRoom, joinRoom, leaveRoom, getUser, removeUser, getUsersInRoom, logUsers } = require('./App/Controllers/users.controllers');
 
-module.exports = socekts = (server) =>{
+module.exports = sockets = (server) =>{
     const io = socketio(server);
 
     io.on('connection', (socket) => {

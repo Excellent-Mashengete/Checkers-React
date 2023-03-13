@@ -53,12 +53,8 @@ const leaveRoom = (id) => {
     users[foundIndex].room = "";
 }
 
-module.exports = { 
-    addUser, 
-    createRoom, 
-    joinRoom, 
-    leaveRoom, 
-    getUser, 
-    removeUser, 
-    getUsersInRoom
+const logUsers = () => {
+    console.log(users);
 }
+
+module.exports = { addUser, createRoom, joinRoom, leaveRoom, getUser, removeUser, getUsersInRoom, logUsers}

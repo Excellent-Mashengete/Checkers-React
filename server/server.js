@@ -4,13 +4,15 @@ const cors = require('cors');
 
 const PORT = process.env.PORT || 5000
 
-const router = require('./App/Routes/Routes');
 const app = express();
 const server = http.createServer(app);
 
-require('./socketIo')(server);
+require('./socketIo')(server)
 
 app.use(cors());
-app.use(router);
+
+app.get('/', (req, res) =>{
+    res.status(200).send('Sever Initialized and Online. Ready to take OFF!');
+});
 
 server.listen(PORT, () => console.log(`server has started on port ${PORT}`));
